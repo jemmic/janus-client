@@ -51,6 +51,7 @@ declare module JanusStatic {
     onmessage?: (message: IMessage, jsep: any) => void;
     onlocalstream?: (stream: any) => void;
     onremotestream?: (stream: any) => void;
+    iceState?: (state: any) => void;
     oncleanup?: () => void;
     detached?: () => void;
     ondataopen?: (data: any) => void;
