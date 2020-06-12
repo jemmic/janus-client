@@ -1,6 +1,6 @@
 # Janus Client
 
-Janus client with TypeScript support. Works for every plugins. WebRTC depency included.
+Janus client with TypeScript support. Works for every plugins. WebRTC dependency included.
 
 ## Installation
 
