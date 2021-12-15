@@ -1,5 +1,5 @@
 {
-  "name": "janus-client",
+  "name": "@jemmic/janus-client",
   "version": "1.0.4",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://https://github.com/jonathanjemmic/janus-client/issues"
+    "url": "https://github.com/jemmic/janus-client/issues"
   },
-  "homepage": "https://https://github.com/jonathanjemmic/janus-client",
+  "homepage": "https://github.com/jemmic/janus-client",
   "dependencies": {
     "webrtc-adapter": "^7.5.1"
   }
