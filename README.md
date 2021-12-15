@@ -4,9 +4,9 @@ Janus client with TypeScript support. Works for every plugins. WebRTC dependency
 
 ## Installation
 
-`npm install janus-client`
+`npm install @jemmic/janus-client`
 or
-`yarn add janus-client`
+`yarn add @jemmic/janus-client`
 
 ## Usage
 
