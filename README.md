@@ -11,7 +11,7 @@ or
 ## Usage
 
 ```
-import Janus from 'janus-client';
+import Janus from '@jemmic/janus-client';
 
 Janus.init({
     callback: () => {

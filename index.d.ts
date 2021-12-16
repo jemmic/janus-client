@@ -137,6 +137,6 @@ declare module JanusStatic {
   };
 }
 
-declare module "janus-client" {
+declare module "@janus/janus-client" {
   export = JanusStatic;
 }
