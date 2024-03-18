@@ -89,6 +89,7 @@ declare module JanusStatic {
     getPlugin(): string;
     getBitrate(): string;
     send(parameters: any): void;
+    data(parameters: any): void;
     createOffer(options: ICreateOfferOptions): void;
     createAnswer(options: IAnswerOfferOptions): void;
     handleRemoteJsep(callbacks: any): void;
