@@ -121,6 +121,7 @@ declare module JanusStatic {
       failIfNoAudio?: boolean;
       failIfNoVideo?: boolean;
       screenshareFrameRate?: number;
+      screensharePreferCurrentTab?: boolean;
     };
     trickle?: boolean;
     stream?: any;
