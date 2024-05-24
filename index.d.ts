@@ -116,11 +116,12 @@ declare module JanusStatic {
       audio?: any;
       videoSend?: boolean;
       videoRecv?: boolean;
-      video?: any;
+      video?: 'screen' | 'window' | 'desktop';
       data?: boolean;
       failIfNoAudio?: boolean;
       failIfNoVideo?: boolean;
       screenshareFrameRate?: number;
+      screensharePreferCurrentTab?: boolean;
     };
     trickle?: boolean;
     stream?: any;
