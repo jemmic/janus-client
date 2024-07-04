@@ -51,8 +51,8 @@ declare module JanusStatic {
     onmessage?: (message: IMessage, jsep: any) => void;
     onlocalstream?: (stream: any) => void;
     onremotestream?: (stream: any) => void;
-    onlocaltrack?: (localTrack: MediaStreamTrack) => void;
-    onremotetrack?: (remoteTrack: MediaStreamTrack) => void;
+    onlocaltrack?: (localTrack: MediaStreamTrack, added: boolean) => void;
+    onremotetrack?: (remoteTrack: MediaStreamTrack, mid: any, added: boolean, reason?: any) => void;
     iceState?: (state: any) => void;
     oncleanup?: () => void;
     detached?: () => void;
@@ -110,7 +110,7 @@ declare module JanusStatic {
   }
 
   export interface ICreateOfferOptions {
-    media: {
+    media?: {
       audioSend?: boolean;
       audioRecv?: boolean;
       audio?: any;
@@ -123,10 +123,20 @@ declare module JanusStatic {
       screenshareFrameRate?: number;
       screensharePreferCurrentTab?: boolean;
     };
+    tracks?: ITrack[],
     trickle?: boolean;
     stream?: any;
     success: (jsep: string) => void;
     error: (err: Error) => void;
+  }
+
+  export interface ITrack {
+    type: string;
+    add?: boolean;
+    recv?: boolean;
+    remove?: boolean;
+    capture?: any;
+    screenshare?: any;
   }
 
   export interface IAnswerOfferOptions extends ICreateOfferOptions {
