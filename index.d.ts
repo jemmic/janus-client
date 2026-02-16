@@ -95,6 +95,7 @@ declare module JanusStatic {
     createOffer(options: ICreateOfferOptions): void;
     createAnswer(options: IAnswerOfferOptions): void;
     handleRemoteJsep(callbacks: any): void;
+    replaceTracks(callbacks: any): void;
     hangup(sendRequest?: boolean): void;
     detach(): void;
 
